@@ -21,8 +21,8 @@
                     <legend>Seus dados</legend>
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" placeholder="Digite seu nome" pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres" autofocus required>
-                    <label>E-mail</label>
-                    <input type="email" placeholder="Digite seu e-mail" required>
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="Digite seu e-mail" required>
                     </fieldset>
                     <fieldset>
                         <legend>Assunto</legend>

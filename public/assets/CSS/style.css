@@ -28,6 +28,7 @@ p {
 	text-align: center;
 	background-color: #3C1D3D;
 	color: #F2FFFC;
+	width: calc(100% - 0.9 * 300px);
 }
 
 .rodape-pagina {

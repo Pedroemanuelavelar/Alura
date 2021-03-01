@@ -1,0 +1,58 @@
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+    transition: all .4s ease;
+    opacity: 0.4;
+}
+
+.citacao-bio::before {
+    content: '"';
+    position: absolute;
+    font-size: 10em;
+    color: #bbb;
+    line-height: .8;
+}
+
+.citacao-bio > p {
+    position: relative;
+}
+
+.container > p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
+}
+
+.citacao-bio:nth-of-type(odd):hover,.citacao-bio:focus {
+	box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+	transform: scale(1.2) rotate(5deg);
+    transition: all .8s ease;
+    opacity: 1;
+}
+
+.citacao-bio:nth-of-type(even):hover,.citacao-bio:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+    transform: scale(1.2) rotate(-5deg);
+    transition: all .8s ease;
+    opacity: 1;
+}
+
+cite {
+    font-style: italic;
+    float: right;
+}
+
+.fiat {
+    float: right;
+}
+
+.petrobras {
+    float: left;
+}

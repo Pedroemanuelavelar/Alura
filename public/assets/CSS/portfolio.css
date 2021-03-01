@@ -1,0 +1,21 @@
+ul.portfolio li{
+    display: inline-block;
+    width: 45%;
+    border: 8px solid #000000;
+    background-color: #FAFFFC;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.portfolio img {
+    width: 100%;
+    box-shadow: 0 0 4px #000;
+}
+
+.portfolio li a {
+    text-decoration: none;
+}
+

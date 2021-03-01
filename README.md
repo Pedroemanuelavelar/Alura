@@ -1,10 +1,5 @@
 
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Pedroemanuelavelar/Alura?color=%2304D361">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Pedroemanuelavelar/Alura">
-
-  	
+<p align="center">	
   <a href="https://www.linkedin.com/in/pedro-emanuel-10a337160/" target="_blank">
     <img alt="Made by Pedro Emanuel" src="https://img.shields.io/badge/made%20by-Pedro Emanuel-%2304D361">
   </a>

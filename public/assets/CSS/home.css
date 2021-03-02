@@ -1,3 +1,29 @@
+h1 {
+    -webkit-animation: aparece 5s ease-in;
+    -moz-animation: aparece 5s ease-in;
+    -o-animation: aparece 5s ease-in;
+    animation: aparece 5s ease-in;
+}
+
+@-webkit-keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 .citacao-bio {
     background-color: #D9E5E3;
     border: .5em solid #C2CCCA;
@@ -5,8 +31,27 @@
     margin: 1em 2em;
     width: 30ch;
     box-sizing: border-box;
-    transition: all .4s ease;
-    opacity: 0.4;
+    transition: transform 1s linear, box-shadow 1s ease-in;
+    transition-delay: 1s, 0s;
+    position: relative;
+    animation: quica 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes quica {
+    from {
+        top: 0;
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(2deg);
+    }
+    to {
+        top: 1em;
+    }
 }
 
 .citacao-bio::before {
@@ -33,15 +78,16 @@
 .citacao-bio:nth-of-type(odd):hover,.citacao-bio:focus {
 	box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
 	transform: scale(1.2) rotate(5deg);
-    transition: all .8s ease;
-    opacity: 1;
+    transition: 0s, 1s;
+    animation-play-state: paused;
 }
 
 .citacao-bio:nth-of-type(even):hover,.citacao-bio:focus {
     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
     transform: scale(1.2) rotate(-5deg);
-    transition: all .8s ease;
-    opacity: 1;
+    transition: 0s, 1s;
+
+    animation-play-state: paused;
 }
 
 cite {
@@ -56,3 +102,42 @@ cite {
 .petrobras {
     float: left;
 }
+
+.habilidades th {
+    font-weight: bold;
+    background-color: #851944;
+    color: white;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
+.habilidades td {
+    background-color: #eee;
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
+}
+
+.habilidades {
+    border-collapse: separate;
+    border-spacing: .25rem;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.habilidades [colspan],
+.habilidades [rowspan] {
+    text-align: center;
+    font-style: italic;
+    vertical-align: middle;
+}
+
+
+

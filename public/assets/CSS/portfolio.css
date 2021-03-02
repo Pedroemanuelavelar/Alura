@@ -1,6 +1,5 @@
 ul.portfolio li{
-    display: inline-block;
-    width: 45%;
+    flex: 1 1 45%;
     border: 8px solid #000000;
     background-color: #FAFFFC;
     box-sizing: border-box;
@@ -10,9 +9,23 @@ ul.portfolio li{
     text-decoration: none;
 }
 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trabalhos ul {
+    display: flex;
+}
+
 .portfolio img {
     width: 100%;
     box-shadow: 0 0 4px #000;
+    object-fit: cover;
+}
+
+.portfolio li:first-child {
+    flex-basis: 100%;
 }
 
 .portfolio li a {

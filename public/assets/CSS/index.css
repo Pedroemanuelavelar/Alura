@@ -1,3 +1,7 @@
+body {
+    display: block;
+}
+
 h1 {
     text-shadow: 5px 5px #000;
 }
@@ -50,7 +54,38 @@ h1 {
     display: block;
     text-align: center;
     box-shadow: 0 0 1em #000, inset 0 0 .5rem #FFF;
+    text-decoration: none;
+    transition: .5s ease-out;
 }
+
+.saudacao em {
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.saudacao em:hover {
+    animation-play-state: paused;
+}
+
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #fa9;
+    transition: .5s ease-in;
+}
+
 .secao-inicio {
     padding: 2em;
 }
@@ -68,16 +103,29 @@ h1 {
     background-size: 20px 20px;
     background-attachment: fixed;
 }
+
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+
+.trabalhos li:last-child {
+    order: 3;
+}
+
 .trabalhos h2 {
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
-    border: .5em solid black;
+    display: flex;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    flex: 1;
+    border: .5em solid black;
 }
 .trabalhos img {
     width: 100%;
@@ -152,7 +200,24 @@ body {
     font-size: 100%;
     color: #D5447E;
     position: absolute;
+    -webkit-animation: aparece 2s;
+    animation: aparece 2s;
 }
+
+@-webkit-keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+
 .eficiencia {
     top: 50%;
     left: 60%;
@@ -243,6 +308,10 @@ body {
     border: .25em solid black;
     font-size: 17px;
     font-family: "Open Sans Condensed", sans-serif;
+    -webkit-animation: aparece 0.5s;
+    animation: aparece 0.5s;
+    transition-delay: 2s;
+    animation-fill-mode: backwards;
 }
 .blog .inicio-post {
     position: absolute;

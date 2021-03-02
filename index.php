@@ -41,6 +41,7 @@
                 <li><img src="./public/assets/images/bmw.png" alt="Site da BMW"></li>
                 <li><img src="./public/assets/images/ibm.png" alt="Site da IBM"></li>
                 <li><img src="./public/assets/images/uol.png" alt="Site da UOL"></li>
+               <!--  <li><img src="./public/assets/images/terra.png" alt="Site da UOL"></li> -->
             </ul>
             <a class="botao-index" href="portfolio.php">Veja mais</a>
         </section>

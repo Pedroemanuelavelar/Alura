@@ -46,6 +46,50 @@
 
 				<p>Procuro repassar meu conhecimento para a comunidade. Para isso, já dei <a href="portfolio.html">diversas palestras</a> e mantenho um <a href="blog.html">blog</a>.</p>
 			</div>
+
+			<h2 class="subtitulo-texto center
+			">Habilidades</h2>
+			<table class="habilidades">
+				<thead>
+					<tr>
+						<th>Habilidade</th>
+						<th>Nível</th>
+						<th>Experiências</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>HTML5</th>
+						<td>Proficiente</td>
+						<td>Uso em todos os sites que desenvolvo</td>
+					</tr>
+					<tr>
+						<th>CSS3</th>
+						<td>Proficiente</td>
+						<td>Uso em todos os sites que desenvolvo</td>
+					</tr>
+					<tr>
+						<th>JavaScript</th>
+						<td>Proficiente</td>
+						<td>Uso em quase todos os sites que desenvolvo, aplicando-o de forma não-obstrutiva</td>
+					</tr>
+					<tr>
+						<th>Design</th>
+						<td>Proficiente</td>
+						<td>Formado em web design pela Universidade de Jacarezinho</td>
+					</tr>
+					<tr>
+            		<th>Git</th>
+            			<td colspan="2" rowspan="3">Estudando</td>
+        			</tr>
+        			<tr>
+            			<th>Angular</th>
+        			</tr>
+        			<tr>
+            			<th>Java</th>
+        			</tr>
+				</tbody>
+			</table>
 		</main>
 		<?php 
 			include('./src/script/nav-bar.php');

@@ -49,6 +49,14 @@
                             </figure>
                         </a>
                     </li>
+                    <li>
+                        <a href="http://terra.com.br" target="_blank">
+                            <figure>
+                                <img src="./public/assets/images/terra.png" alt="Front-page do portal Terra">
+                                <figcaption>Terra.com.br: implementação de design responsivo</figcaption>
+                            </figure>
+                        </a>
+                    </li>
                 </ul>
             </div>
 		</main>
